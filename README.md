@@ -1,0 +1,2 @@
+# STM32_SPI_Slave_DMA
+网络上面关于SPI使用DMA的都是在SPI_Master模式下使用的，自己创建一个在SPI_Slave模式下使用DMA收发的例程。
