@@ -28,7 +28,7 @@ int main(void)
 	u8 key;
 	u16 i = 0;
 	u8 j=0;
-	u8 datatemp[SIZE];
+//	u8 datatemp[SIZE];
 	u32 FLASH_SIZE;
 
 	delay_init();            //延时函数初始化
@@ -66,7 +66,7 @@ LED_Init();
 
 		if(key == KEY0_PRES) //KEY0按下,读取字符串并显示
 		{
-              
+       //使用DMA读取刚才写入Flash的数据       
 				SPI_DMA_BufferRead(W25X_ReadData,FLASH_SIZE - 100,SIZE);//从倒数第100个地址处开始,读出SIZE个字节
 		}
 
